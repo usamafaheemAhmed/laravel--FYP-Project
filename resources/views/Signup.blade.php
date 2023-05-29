@@ -14,7 +14,7 @@
         <div class="col-md-6 bg-dark shadow-lg text-white p-3" style="border-radius: 25px;">
 
                     <h5 class="text-center">Select Product</h5>
-                    <form action="{{url('/')}}/signup" method="post" enctype="multipart/form-data">
+                    <form action="{{url('/')}}/dataEntry" method="post" enctype="multipart/form-data">
                         @csrf
                    
                     <div class="row mt-2" id="productDetails">

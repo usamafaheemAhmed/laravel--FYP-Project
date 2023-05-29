@@ -15,7 +15,7 @@
                 a{
                     color: #ffff
                 }
-                #data h2 {
+                #data h2{
                     font-family: 'Baloo 2', cursive !important;
                 }
                 #data p{
@@ -38,7 +38,7 @@
             <div class="container">
                 <div class="row row-header">
                     <div class="col-12 text-center">
-                        <h1 style="color: #ffff;font-size: 30px;font-family: 'Baloo 2', cursive !important;">About Us</h1>
+                        <h1 style="color: #ffff;font-size: 30px;font-family: 'Baloo 2', cursive !important;">@lang("lang.aboutus")</h1>
                         <p style="font-family: 'Poppins', sans-serif;">We take inspiration from the World's best Crop related Application, and create a unique fusion
                             experience for all of you. Our
                             Services creations will tickle your culinary senses!</p>
@@ -51,7 +51,7 @@
 
             <div>
                 <div class="container mt-4">
-                    <h1 style="font-family: 'Baloo 2', cursive !important;">About Us</h1>
+                    <h1 style="font-family: 'Baloo 2', cursive !important;">@lang("lang.aboutus")</h1>
                     <hr>
                 </div>
             </div>

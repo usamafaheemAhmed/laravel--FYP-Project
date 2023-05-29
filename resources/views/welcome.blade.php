@@ -99,7 +99,7 @@
                 .about .about-box::after {
                  position: absolute;
                  content: "";
-                 background-image: url("{{asset('storage/images/crros.png')}}") ;
+                 /*background-image: url("{{asset('storage/images/crros.png')}}") ;
                 /* background: url(../images/crros.png); */
                 height: 244px;
                 width: 187px;
@@ -128,8 +128,8 @@
                 padding: 40px 0px;
             }
 
-            .about .about-box a {
-                font-size: 16px;
+            .about .about-box .btn-success {
+            font-size: 16px;
             border: #070905 solid 1px;
             background-color: #070905;
             color: #fff;
@@ -143,7 +143,7 @@
              }
 
 
- .about .about-box a:hover{ 
+ .about .about-box .btn-success:hover{ 
      background-color: #428713;
      border: #428713 solid 1px;
      color: #fff;
@@ -361,9 +361,9 @@ background-size: 100%;
 .map figure {margin: 0px;}
 .map figure img {width: 100%;}
 
- .white_bg {
-     background-color: #fff;
-     padding: 40px 30px 30px 30px 
+ .white_color_padding{
+     /* background-color: #fff; */
+     padding: 40px 30px 30px 30px ;
 }
  .contact .titlepage {
      text-align: center;
@@ -386,24 +386,29 @@ background-size: 100%;
      padding: 0;
      padding: 60px 0px;
 }
- .contact .contact_bg .contactus {
+ .white_color_padding .form-control:focus {
+    box-shadow: none;
+}
+ .white_color_padding .form-control {
      border: #e8e8e8 solid 1px;
      padding: 12px 19px;
      margin-bottom: 26px;
-      border-radius: 1px;
+    border-radius: 1px;
      color: #000;
      width: 100%;
+     height: 10%;
 }
- .contact .contact_bg .textarea {
-     margin-bottom: 25px;
-         padding: 29px 19px;
-     color: #000 !important;
-     width: 100%;
-         border: #e8e8e8 solid 1px;
+.white_color_padding .textarea{
+     border: #e8e8e8 solid 1px;
+     padding: 12px 19px;
+     margin-bottom: 26px;
     border-radius: 1px;
-        padding-top: 50px;
+     color: #000;
+     width: 100%;
+     height: 100%;
 }
- .contact .contact_bg .send {
+
+ .send {
     font-family: 'Baloo 2', cursive !important;
      font-size: 16px;
      border: #428713 solid 1px;
@@ -412,8 +417,9 @@ background-size: 100%;
      padding: 11px 67px;
      float: right;
      transition: all 0.3s ease-in;
+        border-radius: 0%;
 }
- .contact .contact_bg .send:hover {
+.send:hover {
      background-color: #ff7e1d;
 border: #ff7e1d solid 1px;
 color: #fff;
@@ -450,18 +456,15 @@ transition: all 0.3s ease-in;
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                         <div class="text-bg ">
-                                            <span>Welcome To Apni Mandi</span>
-                                            <h1 style="color:rgba(255,109,51,255);">Vegetables Shop</h1>
-                                            <p class="text-justify">It is a long established fact that a reader will be
-                                                distracted by the
-                                                readable content of a page when looking at its layout. The point of
-                                                using Lorem Ipsum is that it has a more-or-less normal </p>
+                                            <span>@lang("lang.welcome")</span>
+                                            <h1 style="color:rgba(255,109,51,255);">@lang("lang.vegetablesShop")</h1>
+                                            <p class="text-justify">@lang("lang.fruitsShopjumbopara") </p>
                                             <form class="Vegetable">
                                                 <input class="Vegetable_fom" placeholder="Vegetable" type="text"
                                                     name=" Vegetable">
-                                                <button class="Search_btn">Search</button>
+                                                <button class="Search_btn">@lang("lang.search")</button>
                                             </form>
-                                            <a href="#" class="textBGA">Contact Us</a> <a href="#" class="textBGA">Vegetable</a>
+                                            <a href="#" class="textBGA">@lang("lang.Contact_Us")</a> <a href="#" class="textBGA">@lang("lang.Vegetable")</a>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -481,18 +484,15 @@ transition: all 0.3s ease-in;
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                         <div class="text-bg">
-                                            <span>Welcome To Apni Mandi</span>
-                                            <h1 style="color:rgba(255,109,51,255);">Fruits Shop</h1>
-                                            <p class="text-justify">It is a long established fact that a reader will be
-                                                distracted by the
-                                                readable content of a page when looking at its layout. The point of
-                                                using Lorem Ipsum is that it has a more-or-less normal </p>
+                                            <span>@lang("lang.welcome")</span>
+                                            <h1 style="color:rgba(255,109,51,255);">@lang("lang.fruitsShop")</h1>
+                                            <p class="text-justify">@lang("lang.fruitsShopjumbopara") </p>
                                             <form class="Vegetable">
                                                 <input class="Vegetable_fom" placeholder="Fruits" type="text"
                                                     name=" Vegetable">
-                                                <button class="Search_btn">Search</button>
+                                                <button class="Search_btn">@lang("lang.search")</button>
                                             </form>
-                                            <a href="#" class="textBGA">Contact Us</a> <a href="#" class="textBGA">Fruits</a>
+                                            <a href="#" class="textBGA">@lang("lang.Contact_Us")</a> <a href="#" class="textBGA">@lang("lang.Fruits")</a>
                                         </div>
                                     </div>
     
@@ -511,18 +511,15 @@ transition: all 0.3s ease-in;
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                         <div class="text-bg">
-                                            <span>Welcome To Apni Mandi</span>
-                                            <h1 style="color:rgba(255,109,51,255);">Crop Shop</h1>
-                                            <p class="text-justify">It is a long established fact that a reader will be
-                                                distracted by the
-                                                readable content of a page when looking at its layout. The point of
-                                                using Lorem Ipsum is that it has a more-or-less normal </p>
+                                            <span>@lang("lang.welcome")</span>
+                                            <h1 style="color:rgba(255,109,51,255);">@lang("lang.cropShop")</h1>
+                                            <p class="text-justify">@lang("lang.cropShopjumbopara")</p>
                                             <form class="Vegetable">
                                                 <input class="Vegetable_fom" placeholder="Crops" type="text"
                                                     name=" Vegetable">
-                                                <button class="Search_btn">Search</button>
+                                                <button class="Search_btn">@lang("lang.search")</button>
                                             </form>
-                                            <a href="#" class="textBGA">Contact Us</a> <a href="#"class="textBGA">Crops</a>
+                                            <a href="#" class="textBGA">@lang("lang.Contact_Us")</a> <a href="#"class="textBGA">@lang("lang.Crops")</a>
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
@@ -564,7 +561,7 @@ transition: all 0.3s ease-in;
                             when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less
                             normal distribution of letters, as opposed to using 'Content here, content here', making it
                             look like readable English. Many</p>
-                        <a href="./aboutus.html">Read more</a>
+                        <a href="./aboutus.html"><button class="btn btn-success">Read more</button></a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 padding_rl">
@@ -759,37 +756,17 @@ transition: all 0.3s ease-in;
         <div class="white_color">
             <div class="row">
 
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <form class="contact_bg">
-                        <div class="row">
-                            <div class="col-md-12">
-
-                                <div class="col-md-12">
-                                    <input class="contactus" placeholder="Your Name" type="text" name="Your Name">
-                                </div>
-                                <div class="col-md-12">
-                                    <input class="contactus" placeholder="Email" type="text" name="Email">
-                                </div>
-                                <div class="col-md-12">
-                                    <input class="contactus" placeholder="Phone Number" type="text"
-                                        name="Phone Number">
-                                </div>
-                                <div class="col-md-12">
-                                    <textarea class="textarea" placeholder="Message" type="text"
-                                        name="Message"></textarea>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <button class="send">Send</button>
-                                </div>
-                            </div>
-                    </form>
-                </div>
+                <div class="col-md-6 white_color_padding">
+                    
+                       <x-contactform/>
+                    
+                
             </div>
 
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.188128978204!2d74.44044121448131!3d31.46401065707245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391908dd6138ade3%3A0xa6cc469044e1fbc1!2sLahore%20Garrison%20University.!5e0!3m2!1sen!2s!4v1673993845559!5m2!1sen!2s" width="539" height="520" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+            <div class="col-md-6">
+                <div style="height: 100%">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3403.188128978204!2d74.44044121448131!3d31.46401065707245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391908dd6138ade3%3A0xa6cc469044e1fbc1!2sLahore%20Garrison%20University.!5e0!3m2!1sen!2s!4v1673993845559!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
             </div>
         </div>
     </div>
@@ -800,6 +777,9 @@ transition: all 0.3s ease-in;
 
 
         <script>
-                document.cookie = "myjavascriptVar = " + 0;            
+                document.cookie = "myjavascriptVar = " + 0; 
+              
+                document.cookie = "userlogedin = 0";
+
         </script>
             @endsection
